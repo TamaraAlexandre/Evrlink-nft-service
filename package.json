@@ -1,0 +1,46 @@
+{
+  "name": "evrlink-nft-service",
+  "version": "1.0.0",
+  "description": "A Hardhat-based smart contract service for minting greeting card NFTs on Base network",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "deploy:base-sepolia": "npx hardhat run scripts/deploy.ts --network baseSepolia",
+    "deploy:base": "npx hardhat run scripts/deploy.ts --network base",
+    "mint": "npx hardhat run scripts/mint.ts",
+    "verify": "npx hardhat run scripts/verify.ts"
+  },
+  "keywords": [
+    "nft",
+    "ethereum",
+    "base",
+    "hardhat",
+    "solidity"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ignition": "^3.0.2",
+    "@nomicfoundation/hardhat-ignition-viem": "^3.0.2",
+    "@nomicfoundation/hardhat-keystore": "^3.0.1",
+    "@nomicfoundation/hardhat-network-helpers": "^3.0.0",
+    "@nomicfoundation/hardhat-node-test-runner": "^3.0.2",
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@nomicfoundation/hardhat-toolbox-viem": "^5.0.0",
+    "@nomicfoundation/hardhat-verify": "^3.0.1",
+    "@nomicfoundation/hardhat-viem": "^3.0.0",
+    "@nomicfoundation/hardhat-viem-assertions": "^3.0.1",
+    "@types/node": "^22.18.0",
+    "chai": "^4.5.0",
+    "dotenv": "^17.2.2",
+    "forge-std": "github:foundry-rs/forge-std#v1.9.4",
+    "hardhat": "^3.0.4",
+    "typescript": "~5.8.0",
+    "viem": "^2.37.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0"
+  }
+}
